@@ -96,5 +96,5 @@ def logoutUser(request):
 @login_required(login_url='login')
 def home(request):
 
-    return render(request, 'base/main.html')
+    return render(request, 'base/task_list.html')
 
