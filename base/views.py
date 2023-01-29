@@ -3,8 +3,13 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .forms import CreateUserForm
+from django.views.generic.list import ListView
+from .models import Task
 
 
+class TaskList(ListView):
+    model = Task
+    context_object_name = 'tasks'
 
 
 def registerPage(request):
@@ -22,7 +27,7 @@ def registerPage(request):
                 return redirect('login')
 
         context = {'form': form}
-        return render(request, 'register.html', context)
+        return render(request, 'base/register.html', context)
 
 
 def loginPage(request):
@@ -42,7 +47,7 @@ def loginPage(request):
                 messages.info(request, 'Username OR password is incorrect')
 
         context = {}
-        return render(request, 'login.html', context)
+        return render(request, 'base/login.html', context)
 
 
 def logoutUser(request):
@@ -52,5 +57,6 @@ def logoutUser(request):
 
 @login_required(login_url='login')
 def home(request):
-    return render(request, 'main.html')
+
+    return render(request, 'base/main.html')
 
