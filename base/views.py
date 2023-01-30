@@ -54,7 +54,11 @@ class TaskDelete(LoginRequiredMixin, DeleteView):
     context_object_name = 'task'
     success_url = reverse_lazy('tasks')
 
-
+class TaskComplete(LoginRequiredMixin, DeleteView):
+    model = Task
+    context_object_name = 'task'
+    success_url = reverse_lazy('tasks')
+    complete = False
 
 def registerPage(request):
     if request.user.is_authenticated:

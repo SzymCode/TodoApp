@@ -1,3 +1,5 @@
+{% extends 'base/main.html' %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,30 +8,38 @@
 </head>
 <body>
 {% if request.user.is_authenticated %}
-    <p>{{ request.user }}</p>
-    <a href="{% url 'logout' %}">Logout</a>
+<div class="header-bar">
+    <div>
+            <h1>Hello, {{ request.user }}!</h1>
+            <a href="{% url 'logout' %}" class="logout">Logout</a>
+            <h2>You have {{ count }} incompleted task{{ count|pluralize:"s" }}</h2>
+    </div>
+</div>
 {% endif %}
-<a href="{% url 'task-create' %}">Add Task</a>
+<a href="{% url 'task-create' %}" class="add_task">+</a>
+
 <form method="GET">
-    <input type="text" name="search-area">
-    <input type="submit" value="Search">
+    <input type="text" name="search-area" class="search">
+    <button value="Search" class="btn"><i class="fas fa-search"></i></button>
+    <hr class ="line">
 </form>
-<table>
-    <tr>
-        <th>Item list</th>
-        <th></th>
-        <th></th>
-    </tr>
     {% for task in tasks %}
-    <tr>
-        <td>{{task.title}}</td>
-        <td><a href="{% url 'task' task.id %}">View</a></td>
-        <td><a href="{% url 'task-update' task.id %}">Edit</a></td>
-        <td><a href="{% url 'task-delete' task.id %}">Delete</a></td>
-    </tr>
+        {% if task.complete %}
+            <a href="{% url 'task' task.id %}"><button class="task"><s>{{task.title}}</s></button></a>
+            <a href="{% url 'task-update' task.id %}" class="fas fa-pen"></a>
+            <a href="{% url 'task-delete' task.id %}" class="fas fa-trash"></a>
+            <div class="line1"></div>
+        {% else %}
+            <a href="{% url 'task' task.id %}"><button class="task">{{task.title}}</button></a>
+            <a href="{% url 'task-update' task.id %}" class="fas fa-pen"></a>
+            <a href="{% url 'task-delete' task.id %}" class="fas fa-trash"></a>
+            <div class="line1"></div>
+        {% endif %}
     {% empty %}
         <h3>No items in list</h3>
     {% endfor %}
-</table>
+
 </body>
 </html>
+
+{% endblock content %}
