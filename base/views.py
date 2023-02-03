@@ -46,6 +46,7 @@ class TaskCreate(LoginRequiredMixin, CreateView):
 class TaskUpdate(LoginRequiredMixin, UpdateView):
     model = Task
     fields = ['title', 'description', 'complete']
+    template_name = 'base/task_update.html'
     success_url = reverse_lazy('tasks')
 
 
@@ -71,7 +72,6 @@ def registerPage(request):
                 form.save()
                 user = form.cleaned_data.get('username')
                 messages.success(request, 'Account was created for ' + user)
-
                 return redirect('login')
 
         context = {'form': form}
@@ -85,7 +85,6 @@ def loginPage(request):
         if request.method == 'POST':
             username = request.POST.get('username')
             password = request.POST.get('password')
-
             user = authenticate(request, username=username, password=password)
 
             if user is not None:
@@ -105,6 +104,5 @@ def logoutUser(request):
 
 @login_required(login_url='login')
 def home(request):
-
     return render(request, 'base/task_list.html')
 

@@ -43,7 +43,12 @@ h3 {
     padding-bottom: 15px;
     text-align: center;
 }
-
+h4 {
+    font-weight: normal;
+    padding-top: 8px;
+    font-size: 30px;
+    text-align: center;
+}
 .logout {
     position: absolute;
     top: 8px;
@@ -59,14 +64,7 @@ h3 {
     border-width: 1px;
     border-radius: 5px;
 }
-.add_task {
-    position: absolute;
-    top: 68px;
-    right: 8px;
-    text-decoration: none;
-    color: #8d8ded;
-    font-size: 52px;
-}
+
 .line {
     position: relative;
     top: 8px;
@@ -86,6 +84,15 @@ h3 {
     border-width: 0;
     margin-bottom: 3px;
 }
+.fa-plus {
+    height: 26px;
+    position: absolute;
+    top: 84px;
+    right: 10px;
+    text-decoration: none;
+    color: #8d8ded;
+    font-size: 30px;
+}
 .fa-search {
     font-size: 26px;
     color: #5aa7f3;
@@ -94,10 +101,9 @@ h3 {
     cursor: pointer;
 }
 .fa-pen {
-    width: 18px;
     position: relative;
     top: -36px;
-    left: 323px;
+    left: 330px;
     font-size: 25px;
     color: #7898f0;
     display: inline-block;
@@ -105,7 +111,6 @@ h3 {
     margin: 0;
 }
 .fa-trash {
-    width: 18px;
     position: relative;
     bottom: 36px;
     left: 338px;
@@ -113,6 +118,14 @@ h3 {
     color: #8d8ded;
     text-decoration: none;
     margin: 0;
+}
+.fa-chevron-left {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
 }
 .btn {
     padding: 1px;
@@ -142,6 +155,16 @@ h3 {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.submit_btn {
+    position: absolute;
+    border-color: #8d8ded;
+    border-radius: 5px;
+    right: 10px;
+    bottom: 4px;
+    color: white;
+    background: #8d8ded;
+}
+
 @media (max-width: 1000px) {
     .container{
         margin-top: 0;
@@ -156,5 +179,7 @@ h3 {
     h3 {
         padding: 0;
     }
-
+    h4 {
+        padding-top: 7px;
+    }
 }
