@@ -53,6 +53,7 @@ class TaskUpdate(LoginRequiredMixin, UpdateView):
 class TaskDelete(LoginRequiredMixin, DeleteView):
     model = Task
     context_object_name = 'task'
+    template_name = 'base/task_delete.html'
     success_url = reverse_lazy('tasks')
 
 class TaskComplete(LoginRequiredMixin, DeleteView):

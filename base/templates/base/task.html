@@ -1,5 +1,12 @@
 {% extends 'base/main.html' %}
 {% block content %}
-<h1>Task: {{task}}</h1>
-
+<div class="header-bar" style="height:50px; padding: 0;">
+    <a href="{% url 'tasks' %}" class="fas fa-chevron-left"></a>
+    <h4> Task informations</h4>
+</div>
+<div style="padding: 8px 10px 8px 10px;">
+    <small style="font-size: 25px;"> Title: {{task}}</small>
+    <hr class ="line1" style="position: relative; left: 0; top: 0;">
+    <small style="font-size: 18px; display: block; padding-top: 5px">{{ task.description }}</small>
+</div>
 {% endblock content %}
