@@ -39,6 +39,11 @@ h2 {
     margin-left: 10px;
     font-weight: normal;
 }
+h3 {
+    padding-bottom: 15px;
+    text-align: center;
+}
+
 .logout {
     position: absolute;
     top: 8px;
@@ -54,7 +59,6 @@ h2 {
     border-width: 1px;
     border-radius: 5px;
 }
-
 .add_task {
     position: absolute;
     top: 68px;
@@ -84,7 +88,7 @@ h2 {
 }
 .fa-search {
     font-size: 26px;
-    color: #45b2f6;
+    color: #5aa7f3;
     border-width: 0;
     background-color: white;
     cursor: pointer;
@@ -93,7 +97,7 @@ h2 {
     width: 18px;
     position: relative;
     top: -36px;
-    left: 318px;
+    left: 323px;
     font-size: 25px;
     color: #7898f0;
     display: inline-block;
@@ -121,7 +125,7 @@ h2 {
     background: white;
 }
 .task {
-    width:100%;
+    width: 380px;
     height: 60px;
     text-align: left;
     padding-top: 7px;
@@ -132,11 +136,25 @@ h2 {
     border-width: 0;
     margin-top: -30px;
     margin-bottom: -4px;
+    padding-right: 60px;
     color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
     .container{
         margin-top: 0;
         height:90%;
     }
+    h1 {
+        margin: 0 0 5px 8px;
+    }
+    h2 {
+        margin-left: 8px;
+    }
+    h3 {
+        padding: 0;
+    }
+
 }

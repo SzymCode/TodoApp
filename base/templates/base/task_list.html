@@ -36,7 +36,7 @@
             <div class="line1"></div>
         {% endif %}
     {% empty %}
-        <h3>No items in list</h3>
+        <h3>No <a href="{% url 'task-create' %}" style="text-decoration: none; color: #5aa7f3;">tasks</a> in list.</h3>
     {% endfor %}
 
 </body>
