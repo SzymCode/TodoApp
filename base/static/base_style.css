@@ -1,5 +1,4 @@
-
-body{
+body {
     font-family: Arial, serif;
 }
 html {
@@ -20,35 +19,34 @@ html {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
 }
-.header-bar{
+.header-bar {
     color: white;
     margin-top: 0;
     padding-top: 10px;
     height: 65px;
-
     background: linear-gradient(206deg, rgba(141,141,237,1) 2%, rgba(0,212,255,1) 100%);
     border-radius: 5px;
 }
-h1{
+h1 {
     font-size: 30px;
     margin: 0 0 10px 10px;
     font-weight: normal;
 }
-h2{
+h2 {
     font-size: 16px;
     display:block;
     margin-top: -2px;
     margin-left: 10px;
     font-weight: normal;
 }
-.logout{
+.logout {
     position: absolute;
     top: 8px;
     right: 8px;
     text-decoration: none;
     color: white;
 }
-.search{
+.search {
     position: relative;
     top: 4px;
     right: -8px;
@@ -57,7 +55,7 @@ h2{
     border-radius: 5px;
 }
 
-.add_task{
+.add_task {
     position: absolute;
     top: 68px;
     right: 8px;
@@ -65,8 +63,7 @@ h2{
     color: #8d8ded;
     font-size: 52px;
 }
-
-.line{
+.line {
     position: relative;
     top: 8px;
     height: 3px;
@@ -74,8 +71,7 @@ h2{
     border-width: 0;
     margin-bottom: 32px;
 }
-
-.line1{
+.line1 {
     display: block;
     position: relative;
     top: -21px;
@@ -86,15 +82,14 @@ h2{
     border-width: 0;
     margin-bottom: 3px;
 }
-
-.fa-search{
+.fa-search {
     font-size: 26px;
     color: #45b2f6;
     border-width: 0;
     background-color: white;
     cursor: pointer;
 }
-.fa-pen{
+.fa-pen {
     width: 18px;
     position: relative;
     top: -36px;
@@ -115,7 +110,7 @@ h2{
     text-decoration: none;
     margin: 0;
 }
-.btn{
+.btn {
     padding: 1px;
     position: relative;
     top: 10px;
@@ -125,7 +120,7 @@ h2{
     border-width: 0;
     background: white;
 }
-.task{
+.task {
     width:100%;
     height: 60px;
     text-align: left;
@@ -139,8 +134,7 @@ h2{
     margin-bottom: -4px;
     color: black;
 }
-
-@media (max-width: 1000px) {
+@media (max-width: 1000px){
     .container{
         margin-top: 0;
         height:90%;

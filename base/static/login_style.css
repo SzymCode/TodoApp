@@ -1,22 +1,21 @@
-		.signin_btn {
-			width: 70%;
-			border: 1px solid white;
-			background: #303b42;
-			color: white;
-			margin-top: 0;
-			margin-bottom: 0;
-		}
-		.form-control{
-			border-radius: 0;
-		}
-		.form-control{
-		border-top-right-radius: 5px;
-		border-bottom-right-radius: 5px;
-		}
+.signin_btn {
+	width: 70%;
+	border: 1px solid white;
+	background: #303b42;
+	color: white;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.form-control {
+	border-radius: 0;
+}
+.form-control {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
 
 
 @media (max-width: 1000px) {
-
 	h3 {
 		font-size: 60px;
 	}
@@ -29,8 +28,7 @@
 		margin-top: 20px;
 		margin-bottom: 10px;
 	}
-
-	.form-control{
+	.form-control {
 		border-top-right-radius: 10px;
 		border-bottom-right-radius: 10px;
 	}

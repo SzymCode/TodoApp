@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'register_style.css' %}">
     <link rel="stylesheet" href="{% static 'style.css' %}">
-
 </head>
 <body>
 	<div class="container h-100">
@@ -64,16 +63,14 @@
 		</div>
 	</div>
 	<script>
+		var formFields = document.getElementsByTagName('input')
+		formFields[1].placeholder='Username...';
+		formFields[2].placeholder='Email...';
+		formFields[3].placeholder='Enter password...';
+		formFields[4].placeholder='Re-enter password...';
 
-		var form_fields = document.getElementsByTagName('input')
-		form_fields[1].placeholder='Username...';
-		form_fields[2].placeholder='Email...';
-		form_fields[3].placeholder='Enter password...';
-		form_fields[4].placeholder='Re-enter password...';
-
-
-		for (var field in form_fields){	
-			form_fields[field].className += ' form-control'
+		for (var field in formFields){
+			formFields[field].className += ' form-control'
 		}
 	</script>
 </body>
