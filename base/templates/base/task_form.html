@@ -8,7 +8,9 @@
     <form method="POST" action="">
         {%csrf_token%}
         {{ form.as_p }}
-        <input type="submit" value="Submit" class="submit_btn">
+        <button type="submit" class="submit_btn">
+          <i class="fas fa-check"></i>
+        </button>
     </form>
 </div>
 {% endblock content %}
