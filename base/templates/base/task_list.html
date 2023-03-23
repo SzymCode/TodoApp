@@ -25,7 +25,7 @@
 </form>
     {% for task in tasks %}
         {% if task.complete %}
-            <a href="{% url 'task' task.id %}"><button class="task"><s>{{task.title}}</s></button></a>
+            <a href="{% url 'task' task.id %}"><button class="task" style="color: grey"><s>{{task.title}}</s></button></a>
             <a href="{% url 'task-update' task.id %}" class="fas fa-pen"></a>
             <a href="{% url 'task-delete' task.id %}" class="fas fa-trash"></a>
             <div class="line1"></div>

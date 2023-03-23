@@ -1,10 +1,16 @@
+#form-title {
+	margin-top: 5px;
+}
+h3 {
+	font-size: 45px;
+}
+.form_container {
+	margin-top: 15px;
+}
 .signin_btn {
-	width: 70%;
-	border: 1px solid white;
-	background: #303b42;
-	color: white;
+	width: 100%;
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 5px;
 }
 .form-control {
 	border-radius: 0;
@@ -13,17 +19,14 @@
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
-
-
 @media (max-width: 1000px) {
 	h3 {
-		font-size: 60px;
+		font-size: 70px;
 	}
 	.signin_btn {
 		width: 400px;
-		height: 100px;
-		font-size: 35px;
-		border: 2px solid white;
+		height: 80px;
+		font-size: 30px;
 		border-radius: 10px;
 		margin-top: 20px;
 		margin-bottom: 10px;
@@ -32,4 +35,5 @@
 		border-top-right-radius: 10px;
 		border-bottom-right-radius: 10px;
 	}
+
 }
