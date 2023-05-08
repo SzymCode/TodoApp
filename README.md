@@ -8,13 +8,24 @@
 ![License](https://img.shields.io/badge/license-MIT-blue)
 </div>
 
+
+
+
 # TodoApp
 
 Simple TodoApp built with Django for educational purposes. [Preview](https://szymcode-todoapp-django.herokuapp.com)
+## ⭐ Features 
+
+🔹 User login and registration </br>
+🔹 Create, edit and delete tasks </br>
+🔹 Task searching </br>
+🔹 Custom admin panel </br>
+
+
 
 <details><summary> <h2>  🛠️ Installation:  </summary>
 
-• First make sure u have installed latest versions of [Python, Django.](https://www.geeksforgeeks.org/django-introduction-and-installation/)
+• First make sure u have installed latest versions of [Python, Django](https://www.geeksforgeeks.org/django-introduction-and-installation/).
 
 • Clone this repository or download latest release.
 
@@ -41,6 +52,7 @@ python manage.py migrate
 </details> 
 
 
+
 <details><summary> <h2>  🚀 Run:  </summary>
 
 • **TodoApp** directory:
@@ -50,12 +62,25 @@ python manage.py runserver
 ```
 
 </details>
-<br>
+
+
+
+<details><summary> <h2> ❓ Usage  </summary>
+
+• **localhost:8000** - TodoApp main page
+
+• **localhost:8000/login** & **/register** - login and registration
+
+• **localhost:8000/admin** - Django admin panel
+
+</details>
+
+</br>
 
 
 ## Preview images
 
-![app_preview](https://github.com/SzymCode/TodoAppDjango/blob/main/images/list_preview.png)\
-![app_preview](https://github.com/SzymCode/TodoAppDjango/blob/main/images/empty_preview.png)\
-![app_preview](https://github.com/SzymCode/TodoAppDjango/blob/main/images/edit_preview.png)\
-![app_preview](https://github.com/SzymCode/TodoAppDjango/blob/main/images/informations_preview.png)
+![app_preview](https://github.com/SzymCode/TodoApp/blob/main/images/list_preview.png)\
+![app_preview](https://github.com/SzymCode/TodoApp/blob/main/images/empty_preview.png)\
+![app_preview](https://github.com/SzymCode/TodoApp/blob/main/images/edit_preview.png)\
+![app_preview](https://github.com/SzymCode/TodoApp/blob/main/images/informations_preview.png)
