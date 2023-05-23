@@ -80,7 +80,7 @@ python manage.py runserver
 
 ## Preview images
 
-![app_preview](https://github.com/SzymCode/TodoApp/blob/main/images/list_preview.png)\
-![app_preview](https://github.com/SzymCode/TodoApp/blob/main/images/empty_preview.png)\
-![app_preview](https://github.com/SzymCode/TodoApp/blob/main/images/edit_preview.png)\
-![app_preview](https://github.com/SzymCode/TodoApp/blob/main/images/informations_preview.png)
+![app_preview](https://github.com/SzymCode/TodoApp/blob/main/TodoApp%40Django/images/list_preview.png)\
+![app_preview](https://github.com/SzymCode/TodoApp/blob/main/TodoApp%40Django/images/empty_preview.png)\
+![app_preview](https://github.com/SzymCode/TodoApp/blob/main/TodoApp%40Django/images/edit_preview.png)\
+![app_preview](https://github.com/SzymCode/TodoApp/blob/main/TodoApp%40Django/images/informations_preview.png)
