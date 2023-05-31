@@ -1,38 +1,56 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.textAlignCenter {
+  text-align: center;
+}
+.todoModal {
+  text-align: left;
+  border-radius: 12px;
+  background: white;
+  padding: 10px 20px 20px 20px;
+  width: 90%;
+  max-width: 500px;
+  height: 360px;
+  margin: 10% auto auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputTitle {
+  font-size: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.taskTitleInput {
+  overflow: hidden;
+  resize: none;
+  width: 100%;
+  height: 35px;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.taskDescriptionInput {
+  resize: none;
+  text-align: left;
+  width: 100%;
+  height: 80px;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modalButton, .submitButton {
+  position: sticky;
+  top: -36px;
+}
+
+.modalButtons {
+  margin-left: auto;
+  width: 300px;
+  text-align: right;
+}
+
+.todoSelect {
+  height: 35px;
+  width: 100%;
+}
+
+.modalTitle {
+  margin-bottom: 10px;
 }
