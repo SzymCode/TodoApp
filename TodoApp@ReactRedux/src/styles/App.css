@@ -14,7 +14,14 @@
   height: 360px;
   margin: 10% auto auto;
 }
-
+.todoItem {
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px;
+  margin: 20px auto auto;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
 .inputTitle {
   font-size: 25px;
 }

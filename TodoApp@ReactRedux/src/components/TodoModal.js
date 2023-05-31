@@ -13,6 +13,7 @@ function TodoModal() {
   const [description, setDescription] = useState('');
   const [status, setStatus] = useState('incomplete');
   const [isOpen, setIsOpen] = useState(false);
+
   const handleOpen = () => {
       setTitle('');
       setDescription('');
@@ -20,20 +21,16 @@ function TodoModal() {
       setIsOpen(true);
   };
   const handleClose = () => { setIsOpen(false); };
-
-
-   const handleSubmit = () => {
-       console.log("Title:", title);
-    console.log("Status:", status);
+  const handleSubmit = () => {
     if (title === '') {
       toast.error('Please enter a title');
       return;
     }
     if (title && status) {
-        dispatch(
-          addTodo({ id: uuid(), title, status, description, time: new Date().toLocaleString() })
-        );
-        toast.success('Task added successfully');
+      dispatch(
+        addTodo({ id: uuid(), title, status, description, time: new Date().toLocaleString() })
+      );
+      toast.success('Task added successfully');
       setIsOpen(false);
     }
   };
