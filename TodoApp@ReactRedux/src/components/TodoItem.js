@@ -1,13 +1,14 @@
 import toast from 'react-hot-toast';
-import React from 'react';
-import { MdDelete } from 'react-icons/md';
+import React, {  useState } from 'react';
+import { MdDelete, MdEdit } from 'react-icons/md';
 import { useDispatch } from 'react-redux';
 import { deleteTodo } from '../slices/todoSlice';
-
+import TodoModal from './TodoModal';
 
 
 function TodoItem({ todo }) {
   const dispatch = useDispatch();
+  const [updateModalOpen, setUpdateModalOpen] = useState(false);
 
 
   const handleDelete = () => {
@@ -15,6 +16,9 @@ function TodoItem({ todo }) {
     toast.success('Todo Deleted Successfully');
   };
 
+  const handleUpdate = () => {
+    setUpdateModalOpen(true);
+  };
 
   return (
     <>
@@ -26,12 +30,18 @@ function TodoItem({ todo }) {
           {todo.description}
         </p>
         <p>
+          {todo.status}
+        </p>
+        <p>
           {todo.time}
         </p>
       </div>
-      <div onClick={() => handleDelete()} onKeyDown={() => handleDelete()} tabIndex={0} role="button">
-        <MdDelete />
+      <div>
+        <div onClick={ () => handleDelete() } onKeyDown={ () => handleDelete() } tabIndex={0} role="button">
+          <MdDelete />
+        </div>
       </div>
+      <TodoModal type="update" modalOpen={updateModalOpen} setModalOpen={setUpdateModalOpen} todo={todo}/>
     </>
   );
 }

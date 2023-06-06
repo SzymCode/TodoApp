@@ -8,7 +8,7 @@ function AppHeader() {
     return (
         <div>
             <h2>Header</h2>
-            <TodoModal/>
+            <TodoModal type="add"/>
             <SelectButton id="status" defaultValue="all">
               <MenuItem value="all">
                 All
