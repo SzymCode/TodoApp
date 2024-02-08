@@ -1,35 +1,17 @@
-<div align="center">
+# TodoApp <div> ![Django](https://img.shields.io/badge/Django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white&style=plastic) ![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white&style=plastic) ![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white&style=plastic) ![SQLite](https://img.shields.io/badge/SQLite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white&style=plastic) </div>
 
-![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)\
-![](https://snyk.io/test/github/Szymcode/TodoApp/badge.svg)
-![License](https://img.shields.io/badge/license-MIT-blue)
-</div>
+Simple TodoApp built with Django for educational purposes. \
+[Preview!](https://szymcode-todoapp-django.herokuapp.com)
 
 
 
+<details><summary> <h2>  🛠️ Installation  </summary>
 
-# TodoApp
+• First make sure u have installed latest versions of [Python, Django](https://www.geeksforgeeks.org/django-introduction-and-installation/)
 
-Simple TodoApp built with Django for educational purposes. [Preview](https://szymcode-todoapp-django.herokuapp.com)
-## ⭐ Features 
+• Clone this repository or download latest release
 
-🔹 User login and registration </br>
-🔹 Create, edit and delete tasks </br>
-🔹 Task searching </br>
-🔹 Custom admin panel </br>
-
-
-
-<details><summary> <h2>  🛠️ Installation:  </summary>
-
-• First make sure u have installed latest versions of [Python, Django](https://www.geeksforgeeks.org/django-introduction-and-installation/).
-
-• Clone this repository or download latest release.
-
-• Install modules from requirements.txt in **TodoApp** directory.
+• Install modules from requirements.txt in **TodoApp** directory:
 
 ```bash
 pip install -r requirements.txt
@@ -49,11 +31,12 @@ SECRET_KEY = 'example_secret_key'
 python manage.py migrate
 ```
 
+</hr>
 </details> 
 
 
 
-<details><summary> <h2>  🚀 Run:  </summary>
+<details><summary> <h2>  🚀 Run  </summary>
 
 • **TodoApp** directory:
 
@@ -61,6 +44,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+</hr>
 </details>
 
 
@@ -73,14 +57,17 @@ python manage.py runserver
 
 • **localhost:8000/admin** - Django admin panel
 
+</hr>
 </details>
 
-</br>
 
 
-## Preview images
+
+<details><summary> <h2> 🖼️ Preview images  </summary>
 
 ![app_preview](https://github.com/SzymCode/TodoApp/blob/main/TodoApp%40Django/images/list_preview.png)\
 ![app_preview](https://github.com/SzymCode/TodoApp/blob/main/TodoApp%40Django/images/empty_preview.png)\
 ![app_preview](https://github.com/SzymCode/TodoApp/blob/main/TodoApp%40Django/images/edit_preview.png)\
 ![app_preview](https://github.com/SzymCode/TodoApp/blob/main/TodoApp%40Django/images/informations_preview.png)
+
+</details>
