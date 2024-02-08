@@ -6,11 +6,11 @@ Google browser clone built using Google Search API
 
 <details><summary> <h2>  🛠️ Installation  </summary>
 
-• First make sure u have installed latest versions of [ReactJS, NodeJS,](https://www.tutorialspoint.com/reactjs/reactjs_environment_setup.htm)
+• First make sure u have installed latest versions of [ReactJS, NodeJS](https://www.tutorialspoint.com/reactjs/reactjs_environment_setup.htm)
 
-• Clone this repository.
+• Clone this repository
 
-• Install modules in root directory.
+• Install modules in root directory:
 
 ```bash
 npm install
