@@ -4,9 +4,10 @@ Simple TodoApp built with Django for educational purposes. \
 [Preview!](https://szymcode-todoapp-django.herokuapp.com)
 
 
-
-<details><summary> <h2>  🛠️ Installation  </summary>
-
+<br>
+<details><summary> 🛠️ Installation </summary>
+<br>
+  
 • First make sure u have installed latest versions of [Python, Django](https://www.geeksforgeeks.org/django-introduction-and-installation/)
 
 • Clone this repository or download latest release
@@ -31,40 +32,43 @@ SECRET_KEY = 'example_secret_key'
 python manage.py migrate
 ```
 
-</hr>
+<br>
 </details> 
 
 
 
-<details><summary> <h2>  🚀 Run  </summary>
-
+<details><summary> 🚀 Run </summary>
+<br>
+  
 • **TodoApp** directory:
 
 ```bash
 python manage.py runserver
 ```
 
-</hr>
+<br>
 </details>
 
 
 
-<details><summary> <h2> ❓ Usage  </summary>
-
+<details><summary> ❓ Usage </summary>
+<br>
+  
 • **localhost:8000** - TodoApp main page
 
 • **localhost:8000/login** & **/register** - login and registration
 
 • **localhost:8000/admin** - Django admin panel
 
-</hr>
+<br>
 </details>
 
 
 
 
-<details><summary> <h2> 🖼️ Preview images  </summary>
-
+<details><summary> 🖼️ Preview images  </summary>
+<br>
+  
 ![app_preview](https://github.com/SzymCode/TodoApp/blob/main/TodoApp%40Django/images/list_preview.png)\
 ![app_preview](https://github.com/SzymCode/TodoApp/blob/main/TodoApp%40Django/images/empty_preview.png)\
 ![app_preview](https://github.com/SzymCode/TodoApp/blob/main/TodoApp%40Django/images/edit_preview.png)\
